@@ -1,1 +1,26 @@
 /* Contact us styles. */
+H2{
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+}
+@media screen and (min-width: 768px) {
+    H2{
+      font-size: 48px;
+      line-height: 0.92;
+      letter-spacing: -0.02em;
+    }
+}
+.contact-us{
+  padding: 0px 20px;
+  width: 375px;
+  height: 1100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+}
