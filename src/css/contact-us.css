@@ -56,7 +56,6 @@ H2{
   letter-spacing: -0.02em;
   color: rgba(12, 12, 12, 0.7);
   text-align: start;
-  margin-bottom: 16px;
 }
 .modal-form {
   display: flex;
@@ -193,7 +192,8 @@ H2{
   border-radius: 30px;
   padding: 48px 28px;
   width: 335px;
-  height: 512px;
+  /* height: 512px; */
   background: #f3f3f3;
+  gap: 28px;
 }
 
