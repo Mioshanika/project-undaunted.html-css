@@ -111,7 +111,7 @@
         }
         .hero-cont{
             display: flex;
-            gap: 20px;
+            justify-content: space-between;
             margin-bottom: 40px;
         }
         .hero-image-stack{
@@ -140,9 +140,6 @@
         font-size: 72px;
             line-height: 87%;
     }
-        .hero-cont {
-            gap: 407px;
-        }  
                  .hero-image-stack {
                      width: 60px;
                      height: 60px;
