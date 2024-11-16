@@ -26,8 +26,8 @@
   color: #8f8f8f;
 }
 .ad-itself > a {
-  max-width: 160px;
-  min-height: 48px;
+  width: 160px;
+  height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,24 +46,31 @@
     gap: 32px;
     background-image: url('/img/advertisiment/advert_tab@1x.webp');
   }
-  .ad-itself > p {
-    font-size: 48px;
-    line-height: 92%;
-  }
   @media screen and (min-resolution: 192dpi) {
     .ad-itself {
       background-image: url('/img/advertisiment/advert_tab@2x.webp');
     }
   }
+  .ad-itself > p {
+    font-size: 48px;
+    line-height: 92%;
+  }
 }
 /* ==================================== DESKTOP > */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .ad-itself {
+    padding: 83px 80px;
+    max-width: 1150px;
+    flex-direction: row;
+    justify-content: space-between;
     background-image: url('/img/advertisiment/advert_desk@1x.webp');
   }
   @media screen and (min-resolution: 192dpi) {
     .ad-itself {
       background-image: url('/img/advertisiment/advert_desk@2x.webp');
     }
+  }
+  .ad-itself > p {
+    max-width: 690px;
   }
 }
