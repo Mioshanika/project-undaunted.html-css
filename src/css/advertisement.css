@@ -37,6 +37,12 @@
   line-height: 1.29;
   border-radius: 16px;
   color: #fbfbfb;
+  transition: background-color, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ad-itself > a:hover,
+.ad-itself > a:focus {
+  background-color: #fbfbfb;
+  color: #0c0c0c;
 }
 /* ==================================== TABLET > */
 @media screen and (min-width: 768px) {
