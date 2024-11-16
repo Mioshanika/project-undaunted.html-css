@@ -79,7 +79,7 @@
     color: #3350e9;
     
 }
-.hero-main-image{
+.hero-main-image img{
     border-radius: 30px;
 }
 .hero{padding-top: 60px;}
@@ -93,7 +93,7 @@
         .hero-title-cont{
             max-width: 557px;
         }
-                .hero-main-image {
+                .hero-main-image img{
                     border-radius: 50px;
                 }
         .hero-title{
