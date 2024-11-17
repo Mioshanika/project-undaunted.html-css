@@ -1,1 +1,137 @@
 /* Footer styles. */
+.footer {
+    background-color: #0c0c0c;
+    padding: 40px 40px 28px 40px;
+    border-radius: 30px;
+    
+}
+
+.footer-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 1216px;
+}
+
+.first-row{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 126px;
+}
+
+.footer-logo{
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+}
+
+.footer-icons{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.footer-soc-link{
+    border: 1px solid rgba(251, 251, 251, 0.1);
+    border-radius: 10px;
+    padding: 8px;
+    width: 36px;
+    height: 36px;
+    fill: #fbfbfb;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 8px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-title{
+    margin-right: 147px;
+    margin-left: 178px;
+}
+
+.footer-text {
+    font-family: "Gilroy", sans-serif;
+    max-width: 523px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fbfbfb;
+}
+
+.footer-phone{
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fbfbfb;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid rgba(251, 251, 251, 0.2);
+    border-radius: 16px;
+    width: 160px;
+    height: 48px;
+}
+
+.second-row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 469px;
+}
+
+.footer-navigation{
+    display: flex;
+    align-items: center;
+}
+
+.footer-menu{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.footer-menu-link{
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    text-align: center;
+    color: #fbfbfb;
+    text-transform: capitalize;
+}
+
+.footer-map{
+    max-width: 162px;
+}
+
+.siting{
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    color: #fbfbfb;
+}
+
+hr {
+    width: 100%;
+    height: 0px;
+    border: 1px solid rgba(251, 251, 251, 0.1);
+}
