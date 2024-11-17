@@ -1,1 +1,140 @@
 /* Mobile menu styles. */
+@keyframes mm-slide {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.mobile-menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 394;
+  opacity: 0;
+  pointer-events: none;
+}
+.mobile-menu-backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.mobile-menu {
+  padding-top: 240px;
+  padding-bottom: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+  background-color: #0c0c0c;
+  background-image: url('/img/mob_menu/mob_menu@1x.jpg');
+  color: #fbfbfb;
+  animation: mm-slide 500ms 1;
+}
+@media screen and (min-resolution: 192dpi) {
+  .mobile-menu {
+    background-image: url('/img/mob_menu/mob_menu@2x.jpg');
+  }
+}
+.close-btn {
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  stroke: #fbfbfb;
+}
+.mm-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.mm-nav > li > a {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+}
+.mm-nav li:first-child > a::after,
+.mm-nav > li > a:hover::after,
+.mm-nav > li > a:focus::after {
+  content: '';
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #3350e9;
+}
+.mm-socials {
+  display: flex;
+  gap: 10px;
+}
+.mm-socials > li > a {
+  border: 1px solid rgba(251, 251, 251, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+  width: 34px;
+  height: 34px;
+  fill: #fbfbfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mm-socials > li > a:hover,
+.mm-socials > li > a:focus {
+  opacity: 1;
+}
+.mm-socials > li > a > svg {
+  width: 18px;
+  height: 18px;
+}
+/* ==================================== TABLET > */
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    width: 330px;
+    background-image: url('/img/mob_menu/tab_menu@1x.jpg');
+  }
+  @media screen and (min-resolution: 192dpi) {
+    .mobile-menu {
+      background-image: url('/img/mob_menu/tab_menu@2x.jpg');
+    }
+  }
+  .close-btn {
+    top: 26px;
+    right: 32px;
+    width: 40px;
+    height: 40px;
+  }
+  .mm-socials > li > a {
+    width: 36px;
+    height: 36px;
+  }
+  .mm-socials > li > a > svg {
+    width: 20px;
+    height: 20px;
+  }
+}
