@@ -15,22 +15,14 @@ H2{
     }
 }
 .contact-us{
-  /* position: fixed; */
-  padding: 0px 20px;
-  width: 375px;
-  /* height: 1100px; */
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
   gap: 24px;
-  margin: 0px auto 60px auto;
 }
-@media(min-width: 768px){
+@media screen and (min-width: 768px){
   .contact-us{
-    padding: 0px;
-    width: 704px;
-    /* height: 1236px;     */
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
@@ -38,11 +30,8 @@ H2{
 
   }
 }
-@media(min-width: 1280px){
+@media screen and (min-width: 1280px){
   .contact-us{
-    padding: 0px 65px;
-    width: 1280px;
-    /* height: 640px;     */
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
@@ -59,7 +48,7 @@ H2{
   color: rgba(12, 12, 12, 0.7);
   text-align: start;
 }
-@media(min-width:768px){
+@media screen and (min-width:768px){
   .contact-text{
     font-size: 16px;
     line-height: 1.25;
@@ -96,12 +85,8 @@ H2{
   border-color: #4d5ae5;
 }
 
-.contact-input:focus {
-  fill: #4d5ae5;
-}
-
-.input-wrapper {
-  position: relative;
+.contact-input:active {
+  border-color: #4d5ae5;
 }
 
 .button-send {
@@ -109,7 +94,7 @@ H2{
   padding: 12px 50px;
   min-width: 134px;
   height: 42px;
-  background: #3350e9;
+  background-color: #3350e9;
   border: none;
   font-weight: 500;
   font-size: 14px;
@@ -123,28 +108,15 @@ H2{
   color: #fbfbfb;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media(min-width:768px){
+@media screen and (min-width:768px){
   .button-send{
     padding: 17px 63px;
     width: 160px;
     height: 52px;
   }
 }
-
-
-.modal-label {
-  display: block;
-  margin-bottom: 4px;
-}
-
-.modal-label-comment {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16667;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  display: block;
+.button-send:hover{
+  background-color: #1f3cd4;
 }
 
 ::placeholder {
@@ -206,13 +178,13 @@ H2{
   width: 335px;
   /* height: 1044px; */
 }
-@media(min-width:768px){
+@media screen and (min-width:768px){
   .contact-body{
     width: 704px;
     gap: 40px;
   }
 }
-@media(min-width:1280px){
+@media screen and (min-width:1280px){
   .contact-body{
     width: 1150px;
     flex-direction: row;
@@ -232,7 +204,7 @@ H2{
   background: #f3f3f3;
   gap: 28px;
 }
-@media(min-width: 768px){
+@media screen and (min-width: 768px){
   .info-window{
   border-radius: 50px;
   padding: 50px 122px;
@@ -240,7 +212,7 @@ H2{
   gap: 32px;
   }
 }
-@media(min-width: 1280px){
+@media screen and (min-width: 1280px){
   .info-window{
     width: 580px;
     /* height: 556px; */
@@ -249,3 +221,28 @@ H2{
   }
 }
 
+@media screen and (max-width: 767px){
+  .contact-row{
+    height: 42px;
+}
+}
+@media screen and (max-width: 767px){
+  .contact-row-comment{
+    height: 84px;
+}
+}
+@media screen and (min-width: 768px){
+  .contact-row{
+    height: 52px;
+}
+}
+@media screen and (min-width: 768px){
+  .contact-row-comment{
+    height: 90px;
+}
+}
+/* @media screen and (min-width: 320px) and (max-width:374px){
+  .guma{
+    max-width: 100%;
+  }
+} */
