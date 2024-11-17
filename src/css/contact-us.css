@@ -85,7 +85,7 @@ H2{
   border-color: #4d5ae5;
 }
 
-.contact-input:active {
+.contact-input::after {
   border-color: #4d5ae5;
 }
 
@@ -175,8 +175,7 @@ H2{
   justify-content: flex-start;
   flex-direction: column;
   gap: 20px;
-  width: 335px;
-  /* height: 1044px; */
+  max-width: 100%;
 }
 @media screen and (min-width:768px){
   .contact-body{
@@ -199,8 +198,7 @@ H2{
   flex-direction: column;
   border-radius: 30px;
   padding: 48px 28px;
-  width: 335px;
-  /* height: 512px; */
+  max-width: 100%;
   background: #f3f3f3;
   gap: 28px;
 }
