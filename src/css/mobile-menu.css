@@ -68,6 +68,25 @@
   align-items: center;
   gap: 24px;
 }
+.mm-nav > li > a {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+}
+.mm-nav li:first-child > a::after,
+.mm-nav > li > a:hover::after,
+.mm-nav > li > a:focus::after {
+  content: '';
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #3350e9;
+}
 .mm-socials {
   display: flex;
   gap: 10px;
@@ -78,15 +97,44 @@
   padding: 8px;
   width: 34px;
   height: 34px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.29;
   fill: #fbfbfb;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.8;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mm-socials > li > a:hover,
 .mm-socials > li > a:focus {
-  fill: white;
+  opacity: 1;
+}
+.mm-socials > li > a > svg {
+  width: 18px;
+  height: 18px;
+}
+/* ==================================== TABLET > */
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    width: 330px;
+    background-image: url('/img/mob_menu/tab_menu@1x.jpg');
+  }
+  @media screen and (min-resolution: 192dpi) {
+    .mobile-menu {
+      background-image: url('/img/mob_menu/tab_menu@2x.jpg');
+    }
+  }
+  .close-btn {
+    top: 26px;
+    right: 32px;
+    width: 40px;
+    height: 40px;
+  }
+  .mm-socials > li > a {
+    width: 36px;
+    height: 36px;
+  }
+  .mm-socials > li > a > svg {
+    width: 20px;
+    height: 20px;
+  }
 }
