@@ -1,37 +1,36 @@
 /* Contact us styles. */
-H2{
-    font-family: "Gilroy", sans-serif;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    color: #0c0c0c;
+.h2-contact-us {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
 }
 @media screen and (min-width: 768px) {
-    H2{
-      font-size: 48px;
-      line-height: 0.92;
-      letter-spacing: -0.02em;
-    }
+  .h2-contact-us {
+    font-size: 48px;
+    line-height: 0.92;
+    letter-spacing: -0.02em;
+  }
 }
-.contact-us{
+.contact-us {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
   gap: 24px;
 }
-@media screen and (min-width: 768px){
-  .contact-us{
+@media screen and (min-width: 768px) {
+  .contact-us {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     gap: 40px;
-
   }
 }
-@media screen and (min-width: 1280px){
-  .contact-us{
+@media screen and (min-width: 1280px) {
+  .contact-us {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
@@ -40,7 +39,7 @@ H2{
 }
 
 .contact-text {
-  font-family: "Gilroy", sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28571;
@@ -48,8 +47,8 @@ H2{
   color: rgba(12, 12, 12, 0.7);
   text-align: start;
 }
-@media screen and (min-width:768px){
-  .contact-text{
+@media screen and (min-width: 768px) {
+  .contact-text {
     font-size: 16px;
     line-height: 1.25;
   }
@@ -62,7 +61,6 @@ H2{
   flex-direction: column;
   gap: 18px;
 }
-
 
 .contact-input {
   border: 1px solid rgba(12, 12, 12, 0.15);
@@ -85,10 +83,6 @@ H2{
   border-color: #4d5ae5;
 }
 
-.contact-input::after {
-  border-color: #4d5ae5;
-}
-
 .button-send {
   border-radius: 16px;
   padding: 12px 50px;
@@ -108,19 +102,19 @@ H2{
   color: #fbfbfb;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width:768px){
-  .button-send{
+@media screen and (min-width: 768px) {
+  .button-send {
     padding: 17px 63px;
     width: 160px;
     height: 52px;
   }
 }
-.button-send:hover{
+.button-send:hover {
   background-color: #1f3cd4;
 }
 
 ::placeholder {
-  font-family: "Gilroy", sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
@@ -132,7 +126,7 @@ H2{
   font-size: 14px;
   line-height: 1.29;
   color: #0c0c0c;
-  font-family: "Gilroy", sans-serif;
+  font-family: 'Gilroy', sans-serif;
   resize: none;
   border: 1px solid rgba(12, 12, 12, 0.15);
   border-radius: 12px;
@@ -163,13 +157,13 @@ H2{
 }
 
 .contact-textarea::placeholder {
-  font-family: "Gilroy", sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   color: #0c0c0c;
 }
-.contact-body{
+.contact-body {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -177,21 +171,21 @@ H2{
   gap: 20px;
   max-width: 100%;
 }
-@media screen and (min-width:768px){
-  .contact-body{
+@media screen and (min-width: 768px) {
+  .contact-body {
     width: 704px;
     gap: 40px;
   }
 }
-@media screen and (min-width:1280px){
-  .contact-body{
+@media screen and (min-width: 1280px) {
+  .contact-body {
     width: 1150px;
     flex-direction: row;
     gap: 40px;
   }
 }
 
-.info-window{
+.info-window {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -202,45 +196,39 @@ H2{
   background: #f3f3f3;
   gap: 28px;
 }
-@media screen and (min-width: 768px){
-  .info-window{
-  border-radius: 50px;
-  padding: 50px 122px;
-  width: 704px;
-  gap: 32px;
+@media screen and (min-width: 768px) {
+  .info-window {
+    border-radius: 50px;
+    padding: 50px 122px;
+    width: 704px;
+    gap: 32px;
   }
 }
-@media screen and (min-width: 1280px){
-  .info-window{
+@media screen and (min-width: 1280px) {
+  .info-window {
     width: 580px;
-    /* height: 556px; */
     padding: 50px 60px;
     gap: 32px;
   }
 }
 
-@media screen and (max-width: 767px){
-  .contact-row{
+@media screen and (max-width: 767px) {
+  .contact-row {
     height: 42px;
-}
-}
-@media screen and (max-width: 767px){
-  .contact-row-comment{
-    height: 84px;
-}
-}
-@media screen and (min-width: 768px){
-  .contact-row{
-    height: 52px;
-}
-}
-@media screen and (min-width: 768px){
-  .contact-row-comment{
-    height: 90px;
-}
-}
-/* @media screen and (min-width: 320px) and (max-width:374px){
-  .guma{
-    max-width: 100%;
   }
-} */
+}
+@media screen and (max-width: 767px) {
+  .contact-row-comment {
+    height: 84px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-row {
+    height: 52px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-row-comment {
+    height: 90px;
+  }
+}
