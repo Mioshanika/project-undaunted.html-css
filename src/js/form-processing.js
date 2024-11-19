@@ -3,10 +3,10 @@ const form = document.querySelector('form');
 form.addEventListener('submit', event => {
   event.preventDefault();
 
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  const comment = document.getElementById('comment').value.trim();
+  const name = document.getElementById('user-name').value.trim();
+  const email = document.getElementById('user-email').value.trim();
+  const phone = document.getElementById('user-tel').value.trim();
+  const comment = document.getElementById('user-comment').value.trim();
 
   if (name && email && phone && comment) {
     alert(
