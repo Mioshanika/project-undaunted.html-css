@@ -1,2 +1,2 @@
-import './js/mobile-menu'
-import './js/form-processing'
+import './js/mobile-menu';
+import './js/form-processing';
