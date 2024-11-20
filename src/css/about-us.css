@@ -6,269 +6,195 @@
   --font-family: 'Gilroy', sans-serif;
 }
 
-/* Основная секция */
-
-/* ПК версия */
+/* Базовый (мобильный) стиль */
 #section-about-us {
-  padding: 0px 65px;
-  width: 1280px;
-  height: 532px;
+  margin: 0 auto;
 }
 
-/* Планшетная версия */
-@media screen and (max-width: 1158px) {
-  #section-about-us {
-    padding: 0px 32px;
-    width: 768px;
-    height: 1064px;
-  }
-}
-
-/* Мобильная версия */
-@media screen and (max-width: 767px) {
-  #section-about-us {
-    padding: 0px 20px;
-    width: 375px;
-    height: 912px;
-  }
-}
-
-/* Блок с информацией */
-
-/* Пк версия */
+/* MobF */
 .about-us-info {
-  border-radius: 50px;
-  width: 580px;
-  height: 532px;
+  border-radius: 30px;
+  width: 335px;
+  height: 446px;
   background: var(--cards);
-  margin-right: 40px;
-  flex: 1;
 }
 
-/* Планшетная версия */
-@media screen and (max-width: 1158px) {
+.about-us-header {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: var(--main);
+  padding: 40px 0 0 20px;
+  margin-bottom: 28px;
+}
+
+.about-us-paragraph {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
+  padding: 0px 20px;
+  margin-bottom: 20px;
+}
+
+.about-us-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+a.link {
+  display: flex; /* Flexbox для центрирования */
+  justify-content: center; /* Центровка текста по горизонтали */
+  align-items: center; /* Центровка текста по вертикали */
+  margin-top: 40px; /* Расстояние от последнего <p> */
+  margin-left: 20px; /* Сохраняем отступ слева */
+  height: 48px; /* Фиксированная высота */
+  padding: 0 20px; /* Горизонтальные отступы внутри кнопки */
+  background: var(--accent);
+  border-radius: 16px;
+
+  width: 160px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--background);
+  text-align: center; /* Выравнивание текста */
+  white-space: nowrap; /* Запрещаем перенос текста */
+}
+
+.watch-image {
+  margin-top: 20px;
+  border-radius: 30px;
+  width: 335px;
+  height: 446px;
+}
+
+/* TabF */
+
+@media screen and (min-width: 768px) {
   .about-us-info {
+    border-radius: 50px;
+    width: 704px;
+    height: 512px;
+  }
+
+  .about-us-header {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 92%;
+    letter-spacing: -0.02em;
+    padding: 80px 0 0 60px;
+  }
+
+  .about-us-paragraph {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: -0.02em;
+    padding: 0px 60px;
+    margin-bottom: 20px;
+  }
+
+  .about-us-paragraph:last-child {
+    margin-bottom: 0;
+  }
+
+  a.link {
+    display: flex; /* Flexbox для центрирования */
+    justify-content: center; /* Центровка текста по горизонтали */
+    align-items: center; /* Центровка текста по вертикали */
+    margin-left: 60px; /* Сохраняем отступ слева */
+    height: 48px; /* Фиксированная высота */
+    padding: 0 20px; /* Горизонтальные отступы внутри кнопки */
+    border-radius: 16px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    text-align: center;
+
+    border-radius: 16px;
+    width: 160px;
+    height: 48px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .watch-image {
+    margin-top: 40px;
     border-radius: 50px;
     width: 704px;
     height: 512px;
   }
 }
 
-/* Мобильная версия */
-@media screen and (max-width: 767px) {
-  .about-us-info {
-    border-radius: 30px;
-    width: 335px;
-    height: 446px;
+@media screen and (min-width: 1280px) {
+  .about-us-wrapper {
+    display: flex; /* Устанавливаем Flexbox */
+    align-items: center; /* Центровка по вертикали */
+    justify-content: space-between; /* Пространство между блоками */
   }
-}
 
-/* h1 */
+  .about-us-info {
+    border-radius: 50px;
+    width: 580px;
+    height: 532px;
+  }
 
-/* ПК версия */
-.about-us-header {
-  font-family: var(--font-family);
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 92%;
-  letter-spacing: -0.02em;
-  color: var(--main);
-  padding: 80px 0 0 60px;
-  margin-bottom: 40px;
-}
-
-/* Мобильная версия */
-@media screen and (max-width: 767px) {
   .about-us-header {
-    font-family: var(--font-family);
     font-weight: 600;
-    font-size: 32px;
-    line-height: 100%;
+    font-size: 48px;
+    line-height: 92%;
     letter-spacing: -0.02em;
     color: var(--main);
-    padding: 40px 0 0 20px;
-    margin-bottom: 28px;
+    padding: 80px 0 0 60px;
   }
-}
 
-/* <p> */
-
-/* ПК версия */
-.about-us-paragraph {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 125%;
-  letter-spacing: -0.02em;
-  color: rgba(12, 12, 12, 0.7);
-  padding: 0 60px 0 60px;
-}
-
-/* Добавляем отступ после первого <p> */
-.about-us-paragraph:first-of-type {
-  margin-bottom: 20px;
-}
-
-/* Убираем отступ после второго <p> */
-.about-us-paragraph:not(:first-of-type) {
-  margin-bottom: 40px;
-}
-
-/* Планшетная версия */
-@media screen and (max-width: 1158px) {
-  .about-us-paragraph:not(:first-of-type) {
-    margin-bottom: 60px;
-  }
-}
-
-/* Мобильная версия */
-@media screen and (max-width: 767px) {
-  .about-us-paragraph:not(:first-of-type) {
-    margin-bottom: 40px;
-  }
-}
-
-/* Мобильная версия */
-@media screen and (max-width: 767px) {
   .about-us-paragraph {
-    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: -0.02em;
+    padding: 0px 60px;
+    margin-bottom: 20px;
+  }
+
+  a.link {
+    display: flex; /* Flexbox для центрирования */
+    justify-content: center; /* Центровка текста по горизонтали */
+    align-items: center; /* Центровка текста по вертикали */
+    margin-left: 60px; /* Сохраняем отступ слева */
+    height: 48px; /* Фиксированная высота */
+    padding: 0 20px; /* Горизонтальные отступы внутри кнопки */
+    border-radius: 16px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 129%;
-    letter-spacing: -0.02em;
-    color: rgba(12, 12, 12, 0.7);
-    padding: 0 20px 0 20px;
-  }
-}
+    text-align: center;
 
-/* Кнопка для перехода к секции Сatalog */
-.link {
-  border-radius: 16px;
-  width: 160px;
-  height: 48px;
-  background: var(--accent);
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 129%;
-  text-align: center;
-  color: var(--background);
-  padding: 15px 37px 15px 38px;
-  margin-left: 60px;
-}
-
-/* Мобильная версия */
-@media screen and (max-width: 767px) {
-  .link {
-    margin-left: 20px;
-  }
-}
-
-.link:hover,
-.link:focus {
-  background-color: #1f3cd4;
-}
-
-/* Изображение */
-
-#section-about-us .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-.about-us-image {
-  flex: 1;
-  max-width: 50%;
-}
-
-.watch-image {
-  width: 100%; /* Изображение растягивается */
-  height: auto; /* Сохраняем пропорции */
-}
-
-/* ПК версия */
-@media screen and (min-width: 1158px) {
-  .about-us-wrapper {
-    flex-direction: row; /* Горизонтальная компоновка */
-    gap: 40px; /* Расстояние между текстом и изображением */
+    width: 160px;
+    height: 48px;
+    text-align: center;
+    white-space: nowrap;
   }
 
-  .about-us-image {
-    order: 2; /* Изображение справа */
-    max-width: 50%; /* Ограничиваем ширину изображения */
+  .about-us-picture-wrapper {
+    margin-left: 40px; /* Расстояние между изображением и текстом */
+    border-radius: 50px;
   }
 
-  .about-us-info {
-    order: 1; /* Текст слева */
-  }
-}
-
-/* Планшетная версия */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-  .about-us-wrapper {
-    flex-direction: column; /* Вертикальная компоновка */
-    gap: 40px; /* Расстояние между текстом и изображением */
-  }
-
-  .about-us-image {
-    order: 2; /* Изображение снизу */
-    max-width: 100%;
-  }
-
-  .about-us-info {
-    order: 1; /* Текст сверху */
-  }
-}
-
-/* Мобильная версия */
-@media screen and (max-width: 767px) {
-  .about-us-wrapper {
-    flex-direction: column; /* Вертикальная компоновка */
-    gap: 20px; /* Расстояние между текстом и изображением */
-  }
-
-  .about-us-image {
-    order: 2; /* Изображение снизу */
-    max-width: 100%;
-  }
-
-  .about-us-info {
-    order: 1; /* Текст сверху */
-  }
-}
-
-/* Поддержка Retina (высокое разрешение) */
-
-/* Планшетная версия */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-  .about-us-image {
-    background-image: url('../img/about_us/about_tab@1x.jpg');
-    background-size: cover;
-    background-position: center;
-  }
-
-  @media screen and (min-resolution: 2dppx),
-    (min-resolution: 192dpi),
-    (-webkit-min-device-pixel-ratio: 2) {
-    .about-us-image {
-      background-image: url('../img/about_us/about_tab@2x.jpg');
-    }
-  }
-}
-
-/* Мобильная версия */
-@media screen and (max-width: 767px) {
-  .about-us-image {
-    background-image: url('../img/about_us/about_mob@1x.jpg');
-    background-size: cover;
-    background-position: center;
-  }
-
-  @media screen and (min-resolution: 2dppx),
-    (min-resolution: 192dpi),
-    (-webkit-min-device-pixel-ratio: 2) {
-    .about-us-image {
-      background-image: url('../img/about_us/about_mob@2x.jpg');
-    }
+  .watch-image {
+    margin-top: 0;
+    width: 530px; /* Фиксированная ширина изображения */
+    height: 532px; /* Фиксированная высота изображения */
+    border-radius: 50px;
+    object-fit: cover; /* Подгонка изображения по контейнеру */
   }
 }
