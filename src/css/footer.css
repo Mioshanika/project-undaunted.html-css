@@ -1,9 +1,10 @@
 /* Footer styles. */
 
-.footer-container{
+.footer-container {
     background-color: #0c0c0c;
     border-radius: 30px;
     padding: 40px 28px 28px 28px;
+    width: 335px;
 }
 
 .first-row {
@@ -34,7 +35,7 @@
     width: 122px;
 }
 
-.footer-soc{
+.footer-soc {
     width: 100%;
     border: 1px solid rgba(251, 251, 251, 0.1);
     border-radius: 10px;
@@ -56,13 +57,13 @@
     opacity: 1;
 }
 
-.icons-svg{
+.icons-svg {
     fill: #fbfbfb;
     opacity: 0.8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-cmn{
+.footer-cmn {
     display: flex;
     align-items: center;
     border: 1px solid rgba(251, 251, 251, 0.2);
@@ -80,7 +81,7 @@
     text-align: center;
     color: #fbfbfb;
     padding: 14px 20px;
-    
+
 }
 
 .footer-text {
@@ -102,7 +103,7 @@
     width: 279px;
 }
 
-.footer-navigation{
+.footer-navigation {
     max-width: 147px;
 }
 
@@ -139,7 +140,7 @@ hr {
     margin-bottom: 24px;
 }
 
-.footer-regulation{
+.footer-regulation {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -148,7 +149,7 @@ hr {
     flex-wrap: wrap;
 }
 
-.regulation-text{
+.regulation-text {
     font-weight: 500;
     font-size: 10px;
     line-height: 1.4;
@@ -157,7 +158,7 @@ hr {
     opacity: 0.9;
 }
 
-.regulation-menu{
+.regulation-menu {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -165,7 +166,7 @@ hr {
     gap: 20px;
 }
 
-.regulation-menu-link{
+.regulation-menu-link {
     font-weight: 500;
     font-size: 10px;
     line-height: 1.4;
@@ -178,6 +179,7 @@ hr {
 
     .footer-container {
         padding: 40px 40px 28px 40px;
+        width: 704px;
     }
 
     .first-row {
@@ -185,7 +187,7 @@ hr {
         max-width: 624px;
     }
 
-    .footer-main{
+    .footer-main {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
@@ -207,6 +209,11 @@ hr {
         width: 36px;
         height: 36px;
         gap: 10px;
+    }
+
+    .icons-svg {
+        width: 20px;
+        height: 20px;
     }
 
     .footer-cmn {
@@ -255,7 +262,7 @@ hr {
         margin-bottom: 28px;
     }
 
-    .footer-regulation{
+    .footer-regulation {
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -264,12 +271,12 @@ hr {
         flex-wrap: nowrap;
     }
 
-    .regulation-text{
+    .regulation-text {
         font-size: 14px;
         line-height: 1.3;
     }
 
-    .regulation-menu{
+    .regulation-menu {
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
@@ -277,7 +284,7 @@ hr {
         gap: 20px;
     }
 
-    .regulation-menu-link{
+    .regulation-menu-link {
         font-size: 14px;
         line-height: 1.3;
     }
@@ -288,18 +295,16 @@ hr {
 
     .footer-container {
         padding: 40px 40px 28px 40px;
+        width: 1216px;
     }
 
     .first-row {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
-        flex-direction: row;
         padding-bottom: 126px;
         max-width: 1136px;
-    }
-
-    .footer-main{
+        position: relative;
     }
 
     .footer-logo {
@@ -331,11 +336,16 @@ hr {
 
 
     .footer-text {
-        padding: 0 178px 0 147px;
+        padding: 0;
         font-size: 28px;
         line-height: 1.1;
         text-align: center;
         margin: 0;
+        max-width: 523px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .second-row {
@@ -366,7 +376,7 @@ hr {
         margin-bottom: 28px;
     }
 
-    .footer-regulation{
+    .footer-regulation {
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -375,12 +385,12 @@ hr {
         flex-wrap: nowrap;
     }
 
-    .regulation-text{
+    .regulation-text {
         font-size: 14px;
         line-height: 1.3;
     }
 
-    .regulation-menu{
+    .regulation-menu {
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
@@ -388,7 +398,7 @@ hr {
         gap: 20px;
     }
 
-    .regulation-menu-link{
+    .regulation-menu-link {
         font-size: 14px;
         line-height: 1.3;
     }
