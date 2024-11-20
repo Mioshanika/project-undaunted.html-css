@@ -1,1 +1,53 @@
-<section id="section-about-us">Abous us.</section>
+<section id="section-about-us">
+  <div class="container">
+    <div class="about-us-wrapper">
+      <!-- InfoBlock -->
+      <div class="about-us-info">
+        <h2 class="about-us-header">About Us</h2>
+        <p class="about-us-p-first">
+          Welcome to our premium watch collection, where luxury and style meet
+          functionality and precision. Our selection of timepieces embodies the
+          very best in Swiss craftsmanship and engineering, ensuring that you'll
+          always have a reliable and stylish accessory on your wrist.
+        </p>
+        <p class="about-us-p-second">
+          At our premium watch collection, we believe that a watch is more than
+          just a timekeeping device – it's a statement piece that reflects your
+          personality and style. So why settle for anything less than the best?
+        </p>
+        <a class="about-us-link" href="#section-catalog">View Catalog</a>
+      </div>
+      <!-- ImageBlock -->
+      <picture class="about-us-img">
+        <!-- DeskF -->
+        <source
+          srcset="
+            /img/about_us/about_desk@1x.jpg 1x,
+            /img/about_us/about_desk@2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <!-- TabF -->
+        <source
+          srcset="
+            /img/about_us/about_tab@1x.jpg 1x,
+            /img/about_us/about_tab@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <!-- MobF -->
+        <source
+          srcset="
+            /img/about_us/about_mob@1x.jpg 1x,
+            /img/about_us/about_mob@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          src="/img/about_us/about_mob@1x.jpg"
+          alt="Photo of the expensive watches"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
