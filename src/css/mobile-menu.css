@@ -74,6 +74,7 @@
   font-size: 14px;
   line-height: 1.29;
 }
+.mm-nav > li:first-child > a::after,
 .mm-nav > li > a:hover::after,
 .mm-nav > li > a:focus::after {
   content: '';
