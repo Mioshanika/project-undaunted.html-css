@@ -1,200 +1,108 @@
-:root {
-  --main: #0c0c0c;
-  --accent: #3350e9;
-  --background: #fbfbfb;
-  --cards: #f3f3f3;
-  --font-family: 'Gilroy', sans-serif;
-}
-
-/* Базовый (мобильный) стиль */
-#section-about-us {
-  margin: 0 auto;
-}
-
 /* MobF */
+.about-us-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
 .about-us-info {
+  padding: 40px 20px;
   border-radius: 30px;
-  width: 335px;
-  height: 446px;
-  background: var(--cards);
+  background-color: #f3f3f3;
 }
 
 .about-us-header {
-  font-family: var(--font-family);
+  margin-bottom: 28px;
   font-weight: 600;
   font-size: 32px;
-  line-height: 100%;
+  line-height: 1;
   letter-spacing: -0.02em;
-  color: var(--main);
-  padding: 40px 0 0 20px;
-  margin-bottom: 28px;
 }
 
-.about-us-paragraph {
-  font-family: var(--font-family);
+.about-us-info p {
   font-weight: 500;
   font-size: 14px;
-  line-height: 129%;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   color: rgba(12, 12, 12, 0.7);
-  padding: 0px 20px;
+}
+
+.about-us-p-first {
   margin-bottom: 20px;
 }
-
-.about-us-paragraph:last-child {
-  margin-bottom: 0;
+.about-us-p-second {
+  margin-bottom: 40px;
 }
 
-a.link {
-  display: flex; /* Flexbox для центрирования */
-  justify-content: center; /* Центровка текста по горизонтали */
-  align-items: center; /* Центровка текста по вертикали */
-  margin-top: 40px; /* Расстояние от последнего <p> */
-  margin-left: 20px; /* Сохраняем отступ слева */
-  height: 48px; /* Фиксированная высота */
-  padding: 0 20px; /* Горизонтальные отступы внутри кнопки */
-  background: var(--accent);
-  border-radius: 16px;
-
+.about-us-link {
   width: 160px;
-  font-family: var(--font-family);
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 129%;
-  color: var(--background);
-  text-align: center; /* Выравнивание текста */
-  white-space: nowrap; /* Запрещаем перенос текста */
+  line-height: 1.29;
+  color: #fbfbfb;
+  background-color: #3350e9;
+}
+.about-us-link:hover,
+.about-us-link:focus {
+  background-color: #1f3cd4;
 }
 
-.watch-image {
-  margin-top: 20px;
+.about-us-image {
+  max-width: 335px;
+}
+
+.about-us-img img {
   border-radius: 30px;
-  width: 335px;
-  height: 446px;
 }
 
-/* TabF */
-
+/* TabF > */
 @media screen and (min-width: 768px) {
+  .about-us-wrapper {
+    gap: 40px;
+  }
   .about-us-info {
+    padding: 80px 60px;
     border-radius: 50px;
-    width: 704px;
-    height: 512px;
   }
-
   .about-us-header {
-    font-family: var(--font-family);
-    font-weight: 600;
+    margin-bottom: 40px;
     font-size: 48px;
-    line-height: 92%;
-    letter-spacing: -0.02em;
-    padding: 80px 0 0 60px;
+    line-height: 0.92;
   }
-
-  .about-us-paragraph {
-    font-family: var(--font-family);
-    font-weight: 500;
+  .about-us-info p {
     font-size: 16px;
-    line-height: 125%;
-    letter-spacing: -0.02em;
-    padding: 0px 60px;
-    margin-bottom: 20px;
+    line-height: 1.25;
   }
-
-  .about-us-paragraph:last-child {
-    margin-bottom: 0;
+  .about-us-p-second {
+    margin-bottom: 60px;
   }
-
-  a.link {
-    display: flex; /* Flexbox для центрирования */
-    justify-content: center; /* Центровка текста по горизонтали */
-    align-items: center; /* Центровка текста по вертикали */
-    margin-left: 60px; /* Сохраняем отступ слева */
-    height: 48px; /* Фиксированная высота */
-    padding: 0 20px; /* Горизонтальные отступы внутри кнопки */
-    border-radius: 16px;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 129%;
-    text-align: center;
-
-    border-radius: 16px;
-    width: 160px;
-    height: 48px;
-    text-align: center;
-    white-space: nowrap;
-  }
-
-  .watch-image {
-    margin-top: 40px;
+  .about-us-img {
+    max-width: 704px;
     border-radius: 50px;
-    width: 704px;
-    height: 512px;
+  }
+  .about-us-img img {
+    border-radius: 50px;
   }
 }
-
+/* DeskF */
 @media screen and (min-width: 1280px) {
   .about-us-wrapper {
-    display: flex; /* Устанавливаем Flexbox */
-    align-items: center; /* Центровка по вертикали */
-    justify-content: space-between; /* Пространство между блоками */
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
-
   .about-us-info {
-    border-radius: 50px;
-    width: 580px;
-    height: 532px;
+    max-width: 580px;
   }
-
-  .about-us-header {
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 92%;
-    letter-spacing: -0.02em;
-    color: var(--main);
-    padding: 80px 0 0 60px;
+  .about-us-p-second {
+    margin-bottom: 40px;
   }
-
-  .about-us-paragraph {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 125%;
-    letter-spacing: -0.02em;
-    padding: 0px 60px;
-    margin-bottom: 20px;
-  }
-
-  a.link {
-    display: flex; /* Flexbox для центрирования */
-    justify-content: center; /* Центровка текста по горизонтали */
-    align-items: center; /* Центровка текста по вертикали */
-    margin-left: 60px; /* Сохраняем отступ слева */
-    height: 48px; /* Фиксированная высота */
-    padding: 0 20px; /* Горизонтальные отступы внутри кнопки */
-    border-radius: 16px;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 129%;
-    text-align: center;
-
-    width: 160px;
-    height: 48px;
-    text-align: center;
-    white-space: nowrap;
-  }
-
-  .about-us-picture-wrapper {
-    margin-left: 40px; /* Расстояние между изображением и текстом */
-    border-radius: 50px;
-  }
-
-  .watch-image {
-    margin-top: 0;
-    width: 530px; /* Фиксированная ширина изображения */
-    height: 532px; /* Фиксированная высота изображения */
-    border-radius: 50px;
-    object-fit: cover; /* Подгонка изображения по контейнеру */
+  .about-us-img {
+    max-width: 530px;
   }
 }
