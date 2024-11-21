@@ -1,6 +1,6 @@
 /* Sale styles. */
 .sale {
-  padding: 30px 0;
+  padding-top: 60px;
 }
 .sale-container {
   display: flex;
@@ -116,7 +116,7 @@
 }
 @media screen and (min-width: 768px) {
   .sale {
-    padding: 50px 0;
+    padding-top: 80px;
   }
   .sale-container {
     flex-direction: row;
@@ -179,7 +179,7 @@
 }
 @media screen and (min-width: 1280px) {
   .sale {
-    padding: 50px 0;
+    padding-top: 100px;
   }
   .sale-descr-section {
     max-height: 558px;

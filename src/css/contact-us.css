@@ -1,4 +1,7 @@
 /* Contact us styles. */
+#section-contact-us {
+  padding-top: 60px;
+}
 .h2-contact-us {
   font-weight: 600;
   font-size: 32px;
@@ -103,6 +106,9 @@
   margin-top: 14px;
 }
 @media screen and (min-width: 768px) {
+  #section-contact-us {
+    padding-top: 80px;
+  }
   .button-send {
     padding: 17px 63px;
     width: 160px;
@@ -176,6 +182,9 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  #section-contact-us {
+    padding-top: 100px;
+  }
   .contact-body {
     width: 1150px;
     flex-direction: row;

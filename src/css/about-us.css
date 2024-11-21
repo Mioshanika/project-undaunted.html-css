@@ -1,4 +1,7 @@
 /* MobF */
+#section-about-us {
+  padding-top: 60px;
+}
 .about-us-wrapper {
   display: flex;
   flex-direction: column;
@@ -63,6 +66,9 @@
 
 /* TabF > */
 @media screen and (min-width: 768px) {
+  #section-about-us {
+    padding-top: 80px;
+  }
   .about-us-wrapper {
     gap: 40px;
   }
@@ -92,6 +98,9 @@
 }
 /* DeskF */
 @media screen and (min-width: 1280px) {
+  #section-about-us {
+    padding-top: 100px;
+  }
   .about-us-wrapper {
     flex-direction: row;
     flex-wrap: nowrap;
